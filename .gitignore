@@ -1,0 +1,18 @@
+.DS_Store
+*.swp
+Thumbs.db
+
+# Secrets — never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*credentials*.json
+*secret*
+*apikey*
+*api_key*
+.aws/
+.netrc
