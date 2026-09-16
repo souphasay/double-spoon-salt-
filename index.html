@@ -639,6 +639,23 @@
   window.addEventListener('scroll', onScroll, {passive:true});
   window.addEventListener('resize', onScroll);
   update();
+
+  // Some browsers finish decoding the hero photo just after this script
+  // runs and never repaint the GPU layer it's on until something else
+  // (a scroll) changes the transform again — leaving a blank hero on a
+  // fresh load until the visitor scrolls. Force a repaint once the
+  // photo is actually ready, however it gets there.
+  function repaint(){
+    window.requestAnimationFrame(function(){
+      window.requestAnimationFrame(update);
+    });
+  }
+  if(heroImg.complete){
+    repaint();
+  } else {
+    heroImg.addEventListener('load', repaint, {once:true});
+  }
+  setTimeout(repaint, 500);
 })();
 </script>
 </body>
