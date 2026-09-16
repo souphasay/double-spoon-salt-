@@ -1,7 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#103349">
+<meta name="description" content="Double Spoon Salt (ເກືອກາບ່ວງຄູ່) is a salt factory in Ban Somsavanh, Xaythany District, Vientiane, Laos, producing iodized table salt, hygiene salt, pool salt, and industrial salt.">
 <title>Double Spoon Salt</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Noto+Serif+Lao:wght@400;600;700&family=Noto+Sans+Lao:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/hero-1200.jpg" imagesrcset="images/hero-800.jpg 800w, images/hero-1200.jpg 1200w, images/hero-1600.jpg 1600w, images/hero-2048.jpg 2048w" imagesizes="100vw" fetchpriority="high">
 <style>
   :root{
     --sea-deep:#103349;
@@ -364,12 +372,17 @@
     .seal-badge{width:84px; height:84px; top:-42px;}
     .hero-grid{padding-top:44px;}
   }
+  /* ---------- Mobile robustness additions ---------- */
+  html{overflow-x:hidden;}
+  h1, h2, .kicker-big, .lo-name{overflow-wrap:break-word; word-break:normal;}
+  img{height:auto;}
 </style>
-
+</head>
+<body>
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="#top">
-      <img loading="lazy" decoding="async" src="assets/logo.png" alt="Double Spoon Salt seal logo" width="40" height="40">
+      <img src="images/logo.png" alt="Double Spoon Salt seal logo" width="40" height="40" decoding="async">
       <span class="brand-name">DOUBLE SPOON SALT<small lang="lo">ເກືອກາບ່ວງຄູ່</small></span>
     </a>
     <nav class="links" aria-label="Section">
@@ -388,11 +401,11 @@
 
 <main id="top">
   <div class="hero-media">
-    <img fetchpriority="high" decoding="async" src="assets/hero-pond.jpg" alt="Double Spoon Salt evaporation ponds, white with drying salt, at the factory in Xaythany District, Vientiane" width="2000" height="1500">
+    <img src="images/hero-1600.jpg" srcset="images/hero-800.jpg 800w, images/hero-1200.jpg 1200w, images/hero-1600.jpg 1600w, images/hero-2048.jpg 2048w" sizes="100vw" alt="Double Spoon Salt evaporation ponds, white with drying salt, at the factory in Xaythany District, Vientiane" width="2048" height="1536" fetchpriority="high" decoding="async">
   </div>
   <section class="hero-body">
     <div class="wrap" style="position:relative">
-      <div class="seal-badge"><img loading="lazy" decoding="async" src="assets/logo.png" alt="" width="671" height="700"></div>
+      <div class="seal-badge"><img src="images/logo.png" alt="" width="40" height="42" decoding="async"></div>
       <div class="hero-grid">
         <div>
           <h1 lang="lo">ເກືອລາວແທ້ໆ<br>ຜະລິດໂດຍຄົນລາວ</h1>
@@ -426,13 +439,13 @@
       </div>
       <div class="story-grid">
         <div class="story-photo">
-          <img loading="lazy" decoding="async" src="assets/factory.jpg" alt="Salt evaporation ponds at the Double Spoon Salt factory, with workers gathering raked salt" width="1000" height="553">
+          <img src="images/factory.jpg" alt="Salt evaporation ponds at the Double Spoon Salt factory, with workers gathering raked salt" width="900" height="498" loading="lazy" decoding="async">
         </div>
         <p>Landlocked and far from any sea, Laos has drawn its salt from underground brine for generations. Across Vientiane Province, families have pumped brine into open ponds, let the sun and wind do the work, and raked the salt that reaches the rest of the country — a craft older than any factory.</p>
         <p>Double Spoon Salt continues that work at our factory in Ban Somsavanh, Xaythany District, Vientiane Capital. We take the same underground brine this region has relied on for generations and turn it into the salt that reaches home kitchens, pool decks, and construction sites across Laos — produced here, by people from here.</p>
         <div class="cert-note">
           <div class="cert-note-photo">
-            <img loading="lazy" decoding="async" src="assets/certificate.jpg" alt="Lao Ministry of Health Food and Drug Department food registration certificate for Double Spoon iodized table salt, registration number Or.Yor 1-01-08826-0001" width="500" height="706">
+            <img src="images/certificate.jpg" alt="Lao Ministry of Health Food and Drug Department food registration certificate for Double Spoon iodized table salt, registration number Or.Yor 1-01-08826-0001" width="560" height="790" loading="lazy" decoding="async">
           </div>
           <div class="cert-note-text">
             <span class="tag">Food registration</span>
@@ -454,19 +467,19 @@
       </div>
       <div class="process-grid">
         <div class="proc-card">
-          <img loading="lazy" decoding="async" src="assets/process-mixer.jpg" alt="Motorized wash tank agitating brine at the Double Spoon Salt factory" width="700" height="906">
+          <img src="images/process-mixer.jpg" alt="Motorized wash tank agitating brine at the Double Spoon Salt factory" width="900" height="1166" loading="lazy" decoding="async">
           <p>Wash tanks agitate the salt to rinse it clean before it's packed.</p>
         </div>
         <div class="proc-card">
-          <img loading="lazy" decoding="async" src="assets/process-auger.jpg" alt="Screw conveyor moving brine and salt through the processing line" width="700" height="906">
+          <img src="images/process-auger.jpg" alt="Screw conveyor moving brine and salt through the processing line" width="900" height="1166" loading="lazy" decoding="async">
           <p>Screw conveyors move brine and salt through the line with less handling.</p>
         </div>
         <div class="proc-card">
-          <img loading="lazy" decoding="async" src="assets/process-glove.jpg" alt="Workers wearing gloves sorting salt on the packing line" width="700" height="906">
+          <img src="images/process-glove.jpg" alt="Workers wearing gloves sorting salt on the packing line" width="900" height="1166" loading="lazy" decoding="async">
           <p>Workers wear gloves at the sorting and packing line.</p>
         </div>
         <div class="proc-card">
-          <img loading="lazy" decoding="async" src="assets/process-pack.jpg" alt="Automatic weighing and packing machines at the factory" width="700" height="906">
+          <img src="images/process-pack.jpg" alt="Automatic weighing and packing machines at the factory" width="900" height="1166" loading="lazy" decoding="async">
           <p>Automatic scales and sealers pack each bag to the same weight.</p>
         </div>
       </div>
@@ -484,7 +497,7 @@
       <div class="product-grid">
 
         <article class="p-card" style="--accent:var(--p-red)">
-          <div class="photo"><img loading="lazy" decoding="async" src="assets/product-iodized.jpg" alt="Double Spoon iodized table salt, 1kg package" width="600" height="849"></div>
+          <div class="photo"><img src="images/product-iodized.jpg" alt="Double Spoon iodized table salt, 1kg package" width="600" height="849" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="lo-name" lang="lo">ເກືອໄອໂອດິມ</div>
             <div class="en-name">Iodized Table Salt</div>
@@ -497,7 +510,7 @@
         </article>
 
         <article class="p-card" style="--accent:var(--p-green); --accent-text:var(--p-green-text)">
-          <div class="photo"><img loading="lazy" decoding="async" src="assets/product-hygiene.jpg" alt="Double Spoon non-iodized hygiene salt, 10kg package" width="600" height="833"></div>
+          <div class="photo"><img src="images/product-hygiene.jpg" alt="Double Spoon non-iodized hygiene salt, 10kg package" width="600" height="833" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="lo-name" lang="lo">ເກືອອາມາໄມ</div>
             <div class="en-name">Non-Iodized Hygiene Salt</div>
@@ -510,7 +523,7 @@
         </article>
 
         <article class="p-card" style="--accent:var(--p-blue)">
-          <div class="photo"><img loading="lazy" decoding="async" src="assets/product-pool.jpg" alt="Double Spoon pool salt, 25kg package" width="600" height="849"></div>
+          <div class="photo"><img src="images/product-pool.jpg" alt="Double Spoon pool salt, 25kg package" width="600" height="849" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="lo-name" lang="lo">ເກືອສະລອຍນ້ຳ</div>
             <div class="en-name">Pool Salt</div>
@@ -523,7 +536,7 @@
         </article>
 
         <article class="p-card" style="--accent:var(--p-amber); --accent-text:var(--p-amber-text)">
-          <div class="photo"><img loading="lazy" decoding="async" src="assets/product-industrial.jpg" alt="Double Spoon sun-dried industrial salt, 50kg sack" width="287" height="404"></div>
+          <div class="photo"><img src="images/product-industrial.jpg" alt="Double Spoon sun-dried industrial salt, 50kg sack" width="287" height="404" loading="lazy" decoding="async"></div>
           <div class="body">
             <div class="lo-name" lang="lo">ເກືອຕາກ</div>
             <div class="en-name">Sun-Dried Industrial Salt</div>
@@ -593,7 +606,7 @@
 
   <footer>
     <div class="foot-brand">
-      <img loading="lazy" decoding="async" src="assets/logo.png" alt="" role="presentation" width="671" height="700">
+      <img src="images/logo.png" alt="" role="presentation" width="26" height="27" loading="lazy" decoding="async">
       <span>DOUBLE SPOON SALT</span>
     </div>
     <p>An information page for Double Spoon Salt, Vientiane, Laos — not an online shop. Call or message us to order.</p>
@@ -628,3 +641,5 @@
   update();
 })();
 </script>
+</body>
+</html>
