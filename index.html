@@ -657,6 +657,30 @@
   }
   setTimeout(repaint, 500);
 })();
+
+(function(){
+  // The same "loaded but not painted" quirk that affects the hero photo
+  // (see above) can also leave a lazily-loaded photo further down the page
+  // as a blank box: it finishes decoding right as it scrolls into view, but
+  // the browser doesn't actually paint it until something else forces a
+  // repaint. Nudge every lazy image to repaint itself the moment it loads.
+  function nudge(img){
+    var prev = img.style.transform || '';
+    img.style.transform = prev + ' translateZ(0)';
+    window.requestAnimationFrame(function(){
+      window.requestAnimationFrame(function(){
+        img.style.transform = prev;
+      });
+    });
+  }
+  document.querySelectorAll('img[loading="lazy"]').forEach(function(img){
+    if(img.complete){
+      nudge(img);
+    } else {
+      img.addEventListener('load', function(){ nudge(img); }, {once:true});
+    }
+  });
+})();
 </script>
 </body>
 </html>
